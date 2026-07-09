@@ -61,19 +61,14 @@ Questions this project is built to answer, and where each is addressed:
 
 ## Analyses
 
-**`audience_lift.py`** — For each platform, computes each audience segment's ROAS lift versus that platform's average ROAS, to surface over- and under-performing targeting segments.
-
-**`ad_fatigue.py`** — Bins daily ad frequency into ranges (1.0–1.5 up to 3.5+) and aggregates CTR, engagement rate, and ROAS per bin to detect creative fatigue as frequency climbs. Outputs `creative_fatigue.csv`.
-
 **`Weekday_vs_Weekend_lift.py`** — Runs an independent-samples t-test per platform and metric (ROAS, CTR, CPA, CVR) comparing weekend vs. weekday performance, since there's no true holdout group for a controlled lift test. Flags statistically significant differences (p < 0.05) and which period wins. Outputs `weekend_weekday_lift.csv`.
 
 **`Market Campaign.pbix`** — Power BI dashboard consuming the raw data and script outputs above, across six pages: Executive Summary, Performance Trends, Audience Analysis, Creative & Format, Funnel Analysis, and Pacing Report.
----<img width="730" height="633" alt="data modelling" src="https://github.com/user-attachments/assets/5fa89c7e-ac42-4865-becd-832b3d8904ed" />
 
 ## Setup
 
 ```bash
-pip install pandas numpy scipy seaborn matplotlib
+pip install pandas numpy scipy
 ```
 ---
 
@@ -82,12 +77,10 @@ pip install pandas numpy scipy seaborn matplotlib
 Run each script from the project root:
 
 ```bash
-python audience_lift.py
-python ad_fatigue.py
 python Weekday_vs_Weekend_lift.py
 ```
 
-Note: `ad_fatigue.py` and `Weekday_vs_Weekend_lift.py` currently reference `fact_campaign_daily.csv` via a hardcoded local path — update the `filepath` variable at the top of each script if your CSVs live in `social_campaign_analytics_raw_data/` or a different location.
+Note: `Weekday_vs_Weekend_lift.py` currently reference `fact_campaign_daily.csv` via a hardcoded local path — update the `filepath` variable at the top of each script if your CSVs live in `social_campaign_analytics_raw_data/` or a different location.
 
 ---
 
