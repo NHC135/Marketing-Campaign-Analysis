@@ -1,6 +1,7 @@
 # Social Campaign Analytics
 
 Analysis toolkit for evaluating paid social campaign performance across Meta, TikTok, and YouTube, covering audience targeting, creative fatigue, and day-of-week timing effects. Includes a Power BI dashboard built on the resulting data.
+
 ---
 ## Data
 
@@ -20,6 +21,7 @@ Source exports live in `social_campaign_analytics_raw_data/`:
 Key metrics used throughout: `roas`, `ctr`, `cvr`, `cpa`, `cpm`, `cpc`, `frequency`, `engagement_rate`, `vtr` (video completion rate).
 
 Three brands are represented in the sample data — ByteBrew, NovaSkin, and UrbanFit — across Awareness, Consideration, Conversion, and Engagement objectives.
+
 ---
 ## Data Model
 
@@ -37,6 +39,7 @@ The Power BI dashboard is built on a star schema: `fact_campaign_daily` at the c
 | `dim_platform` | `platform` | ad_format, audience_segment, objective | `platform` |
 
 `fact_campaign_daily` also carries the full metric set (impressions, reach, spend, revenue, roas, ctr, cvr, clicks, conversions, cpa, etc.) — see the fact table description in Data.
+
 ---
 ## Business Questions
 
@@ -55,6 +58,7 @@ Questions this project is built to answer, and where each is addressed:
 | Which campaigns are over- or under-pacing against budget and targets? | `pacing_report.csv`; Dashboard → Pacing Report | Only 22% of campaigns are on track; 44% are underpacing and 33% are overpacing against budget targets |
 | Is spend pacing translating into proportional conversion volume, or are we buying volume without results? | `pacing_report.csv`; Dashboard → Pacing Report | Product Launch Wave 1 is overspending at 164-165% of budget pace across all platforms while converting at only 61-100% of its conversion target |
 ---
+
 ## Analyses
 
 **`audience_lift.py`** — For each platform, computes each audience segment's ROAS lift versus that platform's average ROAS, to surface over- and under-performing targeting segments.
@@ -71,6 +75,7 @@ Questions this project is built to answer, and where each is addressed:
 ```bash
 pip install pandas numpy scipy seaborn matplotlib
 ```
+---
 
 ## Usage
 
@@ -83,6 +88,8 @@ python Weekday_vs_Weekend_lift.py
 ```
 
 Note: `ad_fatigue.py` and `Weekday_vs_Weekend_lift.py` currently reference `fact_campaign_daily.csv` via a hardcoded local path — update the `filepath` variable at the top of each script if your CSVs live in `social_campaign_analytics_raw_data/` or a different location.
+
+---
 
 ## Repository structure
 
