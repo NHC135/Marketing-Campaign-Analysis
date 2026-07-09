@@ -89,8 +89,6 @@ Note: `Weekday_vs_Weekend_lift.py` currently reference `fact_campaign_daily.csv`
 ```
 social_campaign_analytics/
 ├── README.md
-├── audience_lift.py
-├── ad_fatigue.py
 ├── Weekday_vs_Weekend_lift.py
 ├── weekend_weekday_lift.csv
 ├── Market Campaign.pbix
