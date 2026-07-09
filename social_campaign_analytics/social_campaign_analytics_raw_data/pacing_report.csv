@@ -1,0 +1,82 @@
+brand,campaign_name,platform,month,budget_target,impression_target,conversion_target,actual_spend,actual_impressions,actual_conversions,actual_revenue,spend_pacing_pct,impression_pacing_pct,conversion_pacing_pct,spend_variance,pacing_status
+NovaSkin,Summer Glow Launch,Meta,2024-07,14166.67,1666666,959,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+NovaSkin,Summer Glow Launch,Meta,2024-07,14166.67,1666666,959,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+NovaSkin,Summer Glow Launch,Meta,2024-08,14166.67,1666666,959,10515.33,1413512.0,318.0,22160.86,74.23,84.81,33.16,-3651.34,Underpacing
+NovaSkin,Summer Glow Launch,YouTube,2024-07,8500.0,708333,102,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+NovaSkin,Summer Glow Launch,YouTube,2024-07,8500.0,708333,102,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+NovaSkin,Summer Glow Launch,YouTube,2024-08,8500.0,708333,102,6309.13,717923.0,27.0,1828.25,74.23,101.35,26.47,-2190.87,Underpacing
+NovaSkin,Summer Glow Launch,TikTok,2024-07,5666.67,871794,479,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+NovaSkin,Summer Glow Launch,TikTok,2024-07,5666.67,871794,479,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+NovaSkin,Summer Glow Launch,TikTok,2024-08,5666.67,871794,479,4206.09,809181.0,128.0,8516.28,74.23,92.82,26.72,-1460.58,Underpacing
+NovaSkin,Fall Routine Retarget,Meta,2024-07,10000.0,1176470,677,909.08,71762.0,118.0,8279.75,9.09,6.1,17.43,-9090.92,Underpacing
+NovaSkin,Fall Routine Retarget,Meta,2024-07,10000.0,1176470,677,909.08,71762.0,118.0,8279.75,9.09,6.1,17.43,-9090.92,Underpacing
+NovaSkin,Fall Routine Retarget,Meta,2024-08,10000.0,1176470,677,14090.67,1292530.0,1673.0,120429.23,140.91,109.87,247.12,4090.67,Overpacing
+NovaSkin,Fall Routine Retarget,YouTube,2024-07,6000.0,500000,72,545.44,43452.0,16.0,814.03,9.09,8.69,22.22,-5454.56,Underpacing
+NovaSkin,Fall Routine Retarget,YouTube,2024-07,6000.0,500000,72,545.44,43452.0,16.0,814.03,9.09,8.69,22.22,-5454.56,Underpacing
+NovaSkin,Fall Routine Retarget,YouTube,2024-08,6000.0,500000,72,8454.18,581308.0,173.0,12613.75,140.9,116.26,240.28,2454.18,Overpacing
+NovaSkin,Fall Routine Retarget,TikTok,2024-07,4000.0,615384,338,363.64,45784.0,53.0,2743.64,9.09,7.44,15.68,-3636.36,Underpacing
+NovaSkin,Fall Routine Retarget,TikTok,2024-07,4000.0,615384,338,363.64,45784.0,53.0,2743.64,9.09,7.44,15.68,-3636.36,Underpacing
+NovaSkin,Fall Routine Retarget,TikTok,2024-08,4000.0,615384,338,5636.23,717229.0,826.0,54120.39,140.91,116.55,244.38,1636.23,Overpacing
+NovaSkin,Influencer Collab Q4,Meta,2024-07,7500.0,882352,508,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+NovaSkin,Influencer Collab Q4,Meta,2024-07,7500.0,882352,508,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+NovaSkin,Influencer Collab Q4,Meta,2024-08,7500.0,882352,508,4385.44,592974.0,329.0,23514.61,58.47,67.2,64.76,-3114.56,Underpacing
+NovaSkin,Influencer Collab Q4,YouTube,2024-07,4500.0,375000,53,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+NovaSkin,Influencer Collab Q4,YouTube,2024-07,4500.0,375000,53,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+NovaSkin,Influencer Collab Q4,YouTube,2024-08,4500.0,375000,53,2631.18,247140.0,13.0,821.19,58.47,65.9,24.53,-1868.82,Underpacing
+NovaSkin,Influencer Collab Q4,TikTok,2024-07,3000.0,461538,253,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+NovaSkin,Influencer Collab Q4,TikTok,2024-07,3000.0,461538,253,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+NovaSkin,Influencer Collab Q4,TikTok,2024-08,3000.0,461538,253,1754.11,453888.0,181.0,12465.27,58.47,98.34,71.54,-1245.89,Underpacing
+UrbanFit,New Year New You,Meta,2024-07,20000.0,2352941,1355,5399.95,585791.0,532.0,54942.52,27.0,24.9,39.26,-14600.05,Underpacing
+UrbanFit,New Year New You,Meta,2024-07,20000.0,2352941,1355,5399.95,585791.0,532.0,54942.52,27.0,24.9,39.26,-14600.05,Underpacing
+UrbanFit,New Year New You,Meta,2024-08,20000.0,2352941,1355,18599.78,1764675.0,2178.0,201309.36,93.0,75.0,160.74,-1400.22,On Track
+UrbanFit,New Year New You,YouTube,2024-07,12000.0,1000000,144,3239.94,217349.0,68.0,6445.55,27.0,21.73,47.22,-8760.06,Underpacing
+UrbanFit,New Year New You,YouTube,2024-07,12000.0,1000000,144,3239.94,217349.0,68.0,6445.55,27.0,21.73,47.22,-8760.06,Underpacing
+UrbanFit,New Year New You,YouTube,2024-08,12000.0,1000000,144,11159.63,689535.0,214.0,21111.12,93.0,68.95,148.61,-840.37,On Track
+UrbanFit,New Year New You,TikTok,2024-07,8000.0,1230769,676,2159.92,288563.0,323.0,31765.87,27.0,23.45,47.78,-5840.08,Underpacing
+UrbanFit,New Year New You,TikTok,2024-07,8000.0,1230769,676,2159.92,288563.0,323.0,31765.87,27.0,23.45,47.78,-5840.08,Underpacing
+UrbanFit,New Year New You,TikTok,2024-08,8000.0,1230769,676,7439.79,909239.0,1098.0,104137.05,93.0,73.88,162.43,-560.21,On Track
+UrbanFit,Brand Awareness Push,Meta,2024-07,8333.33,980392,564,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+UrbanFit,Brand Awareness Push,Meta,2024-07,8333.33,980392,564,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+UrbanFit,Brand Awareness Push,Meta,2024-08,8333.33,980392,564,6680.9,1003809.0,149.0,14356.51,80.17,102.39,26.42,-1652.43,Underpacing
+UrbanFit,Brand Awareness Push,YouTube,2024-07,5000.0,416666,60,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+UrbanFit,Brand Awareness Push,YouTube,2024-07,5000.0,416666,60,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+UrbanFit,Brand Awareness Push,YouTube,2024-08,5000.0,416666,60,4008.36,361626.0,6.0,546.41,80.17,86.79,10.0,-991.64,Underpacing
+UrbanFit,Brand Awareness Push,TikTok,2024-07,3333.33,512820,282,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+UrbanFit,Brand Awareness Push,TikTok,2024-07,3333.33,512820,282,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+UrbanFit,Brand Awareness Push,TikTok,2024-08,3333.33,512820,282,2672.24,576198.0,94.0,9118.15,80.17,112.36,33.33,-661.09,Underpacing
+UrbanFit,Holiday Gift Guide,Meta,2024-07,15833.33,1862745,1072,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+UrbanFit,Holiday Gift Guide,Meta,2024-07,15833.33,1862745,1072,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+UrbanFit,Holiday Gift Guide,Meta,2024-08,15833.33,1862745,1072,22217.46,2099103.0,2357.0,232250.27,140.32,112.69,219.87,6384.13,Overpacing
+UrbanFit,Holiday Gift Guide,YouTube,2024-07,9500.0,791666,113,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+UrbanFit,Holiday Gift Guide,YouTube,2024-07,9500.0,791666,113,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+UrbanFit,Holiday Gift Guide,YouTube,2024-08,9500.0,791666,113,13330.24,894743.0,278.0,27259.18,140.32,113.02,246.02,3830.24,Overpacing
+UrbanFit,Holiday Gift Guide,TikTok,2024-07,6333.33,974358,535,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+UrbanFit,Holiday Gift Guide,TikTok,2024-07,6333.33,974358,535,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+UrbanFit,Holiday Gift Guide,TikTok,2024-08,6333.33,974358,535,8886.91,1173646.0,1283.0,130435.44,140.32,120.45,239.81,2553.58,Overpacing
+ByteBrew,Product Launch Wave 1,Meta,2024-07,33333.33,3921568,2258,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+ByteBrew,Product Launch Wave 1,Meta,2024-07,33333.33,3921568,2258,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+ByteBrew,Product Launch Wave 1,Meta,2024-08,33333.33,3921568,2258,54901.81,7721345.0,1390.0,238562.32,164.71,196.89,61.56,21568.48,Overpacing
+ByteBrew,Product Launch Wave 1,YouTube,2024-07,20000.0,1666666,240,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+ByteBrew,Product Launch Wave 1,YouTube,2024-07,20000.0,1666666,240,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+ByteBrew,Product Launch Wave 1,YouTube,2024-08,20000.0,1666666,240,32940.92,4026399.0,159.0,28017.72,164.7,241.58,66.25,12940.92,Overpacing
+ByteBrew,Product Launch Wave 1,TikTok,2024-07,13333.33,2051282,1128,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+ByteBrew,Product Launch Wave 1,TikTok,2024-07,13333.33,2051282,1128,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+ByteBrew,Product Launch Wave 1,TikTok,2024-08,13333.33,2051282,1128,21960.62,4431852.0,1131.0,196040.43,164.7,216.05,100.27,8627.29,Overpacing
+ByteBrew,Consideration Drive,Meta,2024-07,13333.33,1568627,903,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+ByteBrew,Consideration Drive,Meta,2024-07,13333.33,1568627,903,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+ByteBrew,Consideration Drive,Meta,2024-08,13333.33,1568627,903,1666.64,203526.0,101.0,21957.98,12.5,12.97,11.18,-11666.69,Underpacing
+ByteBrew,Consideration Drive,YouTube,2024-07,8000.0,666666,95,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+ByteBrew,Consideration Drive,YouTube,2024-07,8000.0,666666,95,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+ByteBrew,Consideration Drive,YouTube,2024-08,8000.0,666666,95,999.95,88603.0,12.0,2333.2,12.5,13.29,12.63,-7000.05,Underpacing
+ByteBrew,Consideration Drive,TikTok,2024-07,5333.33,820512,451,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+ByteBrew,Consideration Drive,TikTok,2024-07,5333.33,820512,451,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Overpacing
+ByteBrew,Consideration Drive,TikTok,2024-08,5333.33,820512,451,666.65,86235.0,39.0,6540.69,12.5,10.51,8.65,-4666.68,Underpacing
+ByteBrew,Black Friday Promo,Meta,2024-07,25000.0,2941176,1694,9677.34,887095.0,1068.0,200836.54,38.71,30.16,63.05,-15322.66,Underpacing
+ByteBrew,Black Friday Promo,Meta,2024-07,25000.0,2941176,1694,9677.34,887095.0,1068.0,200836.54,38.71,30.16,63.05,-15322.66,Underpacing
+ByteBrew,Black Friday Promo,Meta,2024-08,25000.0,2941176,1694,24999.82,2292647.0,2760.0,484839.41,100.0,77.95,162.93,-0.18,On Track
+ByteBrew,Black Friday Promo,YouTube,2024-07,15000.0,1250000,180,5806.31,352355.0,98.0,19099.56,38.71,28.19,54.44,-9193.69,Underpacing
+ByteBrew,Black Friday Promo,YouTube,2024-07,15000.0,1250000,180,5806.31,352355.0,98.0,19099.56,38.71,28.19,54.44,-9193.69,Underpacing
+ByteBrew,Black Friday Promo,YouTube,2024-08,15000.0,1250000,180,14999.69,1017847.0,291.0,56598.66,100.0,81.43,161.67,-0.31,On Track
+ByteBrew,Black Friday Promo,TikTok,2024-07,10000.0,1538461,846,3870.88,470001.0,586.0,110514.65,38.71,30.55,69.27,-6129.12,Underpacing
+ByteBrew,Black Friday Promo,TikTok,2024-07,10000.0,1538461,846,3870.88,470001.0,586.0,110514.65,38.71,30.55,69.27,-6129.12,Underpacing
+ByteBrew,Black Friday Promo,TikTok,2024-08,10000.0,1538461,846,9999.85,1288914.0,1402.0,252813.86,100.0,83.78,165.72,-0.15,On Track

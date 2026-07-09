@@ -1,0 +1,13 @@
+,Platform,Metric,Weekday Avg,Weekend Avg,Lift %,Significant,Interpretation
+0,Meta,ROAS,7.048,10.1005,43.31,['Yes'],Weekend outperforms
+1,Meta,CTR,1.9837,2.2097,11.39,['Yes'],Weekend outperforms
+2,Meta,CPA,35.748,25.5953,-28.4,['Yes'],Weekday outperforms
+3,Meta,CVR,2.7144,3.0357,11.84,['Yes'],Weekend outperforms
+4,YouTube,ROAS,1.0506,1.5979,52.1,['Yes'],Weekend outperforms
+5,YouTube,CTR,0.8982,1.0035,11.73,['Yes'],Weekend outperforms
+6,YouTube,CPA,61.2784,59.345,-3.16,['No'],no significance
+7,YouTube,CVR,1.1786,1.4434,22.47,['Yes'],Weekend outperforms
+8,TikTok,ROAS,9.215,11.2581,22.17,['Yes'],Weekend outperforms
+9,TikTok,CTR,2.3953,2.7135,13.28,['Yes'],Weekend outperforms
+10,TikTok,CPA,19.1309,18.8126,-1.66,['No'],no significance
+11,TikTok,CVR,2.1788,2.2507,3.3,['Yes'],no significance
