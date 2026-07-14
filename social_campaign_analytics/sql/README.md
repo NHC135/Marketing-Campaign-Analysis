@@ -6,7 +6,7 @@ Verified end-to-end on PostgreSQL 16: every quality check passes and the gold vi
 
 ## Files & run order
 
-```bash
+```
 # 1. Database + schemas (connects to the postgres maintenance DB; DROPS and
 #    recreates social_campaign_dw — see WARNING in the script header)
 psql -d postgres -f sql/init_database.sql
@@ -28,8 +28,6 @@ psql -d social_campaign_dw -f sql/ddl_gold.sql
 psql -d social_campaign_dw -f sql/quality_checks_silver.sql
 psql -d social_campaign_dw -f sql/quality_checks_gold.sql
 ```
-
-Note: `bronze.load_bronze` uses server-side `COPY`, so the Postgres server must be able to read the CSV path. From a restricted client, run psql `\copy` with the same column lists instead. The legacy numbered scripts (`00_…`–`04_…`), if still present, are the pre-restructure versions of the same pipeline and are superseded by the files above.
 
 ## MSSQL → PostgreSQL translations used
 
