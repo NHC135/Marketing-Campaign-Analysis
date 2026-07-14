@@ -1,6 +1,6 @@
 # Social Campaign Analytics
 
-Analysis toolkit for evaluating paid social campaign performance across Meta, TikTok, and YouTube, covering audience targeting, creative fatigue, and day-of-week timing effects. Includes a Power BI dashboard built on the resulting data and a data warehouse that follows the medallion architecture for a unified place for analytics. A seperate README for the medallion architecture is available in "sql" folder.
+Analysis toolkit for evaluating paid social campaign performance across Meta, TikTok, and YouTube, covering audience targeting, creative fatigue, and day-of-week timing effects. Includes a Power BI dashboard built on the resulting data and a data warehouse that follows the medallion architecture for a unified place for analytics. The scripts and a seperate README for the data warehouse is available in "sql" folder.
 
 ---
 ## Data
