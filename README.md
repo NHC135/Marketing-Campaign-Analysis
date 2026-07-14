@@ -2,7 +2,7 @@
 
 Analysis toolkit for evaluating paid social campaign performance across Meta, TikTok, and YouTube, covering audience targeting, creative fatigue, and day-of-week timing effects. Includes a Power BI dashboard built on the resulting data and a data warehouse that follows the medallion architecture for a unified place for analytics.  
 
-*a seperate README is available in "sql" folder
+a seperate README is available in "sql" folder
 ---
 ## Data
 Raw data is simulated dataset that mimics social campaign performance platforms. 
