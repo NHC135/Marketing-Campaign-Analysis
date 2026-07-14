@@ -11,22 +11,22 @@ Verified end-to-end on PostgreSQL 16: every quality check passes and the gold vi
 #    recreates social_campaign_dw — see WARNING in the script header)
 psql -d postgres -f sql/init_database.sql
 
-# 2. Bronze: raw tables + stored-procedure loader (server-side COPY)
-psql -d social_campaign_dw -f sql/ddl_bronze.sql
-psql -d social_campaign_dw -f sql/proc_load_bronze.sql
-psql -d social_campaign_dw -c "CALL bronze.load_bronze('/absolute/path/to/social_campaign_analytics')"
+# 2. Bronze: raw tables + stored-procedure loader
+psql  sql/ddl_bronze.sql
+psql  sql/proc_load_bronze.sql
+psql  "CALL bronze.load_bronze('/absolute/path/to/social_campaign_analytics')"
 
 # 3. Silver: snowflake schema + ETL stored procedure (truncate & insert)
-psql -d social_campaign_dw -f sql/ddl_silver.sql
-psql -d social_campaign_dw -f sql/proc_load_silver.sql
-psql -d social_campaign_dw -c "CALL silver.load_silver()"
+psql  sql/ddl_silver.sql
+psql  sql/proc_load_silver.sql
+psql  "CALL silver.load_silver()"
 
 # 4. Gold: analytics-ready views
-psql -d social_campaign_dw -f sql/ddl_gold.sql
+psql sql/ddl_gold.sql
 
 # 5. Quality checks (unless a check states otherwise, expectation: no results)
-psql -d social_campaign_dw -f sql/quality_checks_silver.sql
-psql -d social_campaign_dw -f sql/quality_checks_gold.sql
+psql sql/quality_checks_silver.sql
+psql sql/quality_checks_gold.sql
 ```
 
 ## MSSQL → PostgreSQL translations used
@@ -37,14 +37,8 @@ psql -d social_campaign_dw -f sql/quality_checks_gold.sql
 
 **Bronze — "Ingest"** (`ddl_bronze.sql`, `proc_load_bronze.sql`) — one typed table per source CSV, loaded as-is (full load, truncate & insert) with per-table timing notices and error handling. Source defects are landed untouched: 27 exact duplicate pacing rows, float-styled integer columns, zeroed actuals mislabeled "Overpacing".
 
-**Silver — "Clean"** (`ddl_silver.sql`, `proc_load_silver.sql`) — standardized, normalized, deduplicated snowflake schema with `dwh_create_date` audit columns. Ratio metrics (CTR, CPM, CPC, CPA, CVR, ROAS, engagement rate, VTR, frequency) are recomputed from raw counts rather than trusted from the export. Enrichments: gap-free calendar with both ISO and source (`%U`) week labels, targeting-type classification, video-format flags, `days_into_campaign`, creative-fatigue frequency bins, generated `net_revenue`.
-
-```
-dim_brand ──< dim_campaign ──────<┐
-dim_platform ──< dim_ad_format ──< fact_campaign_daily >── dim_date
-dim_audience ────────────────────<┘
-fact_pacing_target (monthly budget/impression/conversion targets)
-```
+**Silver — "Clean"** (`ddl_silver.sql`, `proc_load_silver.sql`) — standardized, normalized, deduplicated snowflake schema with `dwh_create_date` audit columns. Ratio metrics (CTR, CPM, CPC, CPA, CVR, ROAS, engagement rate, VTR, frequency) are recomputed from raw counts rather than trusted from the export. 
+Enrichments: gap-free calendar with both ISO and source (`%U`) week labels, targeting-type classification, video-format flags, `days_into_campaign`, creative-fatigue frequency bins, generated `net_revenue`.
 
 Grain of `fact_campaign_daily`: date × campaign × platform × ad format × audience segment (enforced UNIQUE), with row-level CHECKs for funnel ordering and non-negativity.
 
@@ -58,8 +52,6 @@ Grain of `fact_campaign_daily`: date × campaign × platform × ad format × aud
 | Creative & Format | `vw_format_performance` (score + tier), `vw_creative_fatigue` | format_performance, creative_fatigue |
 | Funnel Analysis | `vw_funnel_stages`, `vw_funnel_pass_through` | funnel_analysis |
 | Pacing Report | `vw_pacing_report`, `vw_pacing_status_summary` | pacing_report |
-
-`vw_weekend_weekday_lift` recomputes the Python t-test in SQL (Welch's t, significant at |t| > 1.96) and reproduces `weekend_weekday_lift.csv`.
 
 ## Quality checks
 
