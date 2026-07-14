@@ -57,8 +57,4 @@ Grain of `fact_campaign_daily`: date × campaign × platform × ad format × aud
 
 `quality_checks_silver.sql` — key uniqueness, unwanted spaces, domain standardization, calendar gaps, week-label convention, bronze→silver row completeness, funnel ordering, negative measures, implausible metric ranges, derived-metric consistency vs the export, FK orphans, pacing dedup effectiveness, dimension cardinalities.
 
-`quality_checks_gold.sql` — join fan-out on the enriched base view; reconciliation of every gold view against its pre-aggregated source CSV (platform, campaign, audience, format, funnel, weekly trend, weekend lift); and dashboard anchors that compare `vw_executive_kpis`, campaign ROAS, and platform ROAS against the printed PDF values.
-
-## Known source defects (surfaced, not hidden)
-
-The pacing export contains 27 exact duplicate rows and rows with zeroed actuals mislabeled "Overpacing". Silver dedupes targets; gold recomputes actuals from the daily fact and re-derives status (<90% Underpacing, >110% Overpacing). The export also writes CPA = 0 on days with zero conversions; silver stores NULL (correct), but the lift view mirrors the zeros-included methodology so it reconciles with the dashboard. `vw_pacing_report` covers all target months — filter to the latest month to mirror the PDF's donut.
+`quality_checks_gold.sql` — join fan-out on the enriched base view; reconciliation of every gold view against its pre-aggregated source CSV (platform, campaign, audience, format, funnel, weekly trend, weekend lift); and dashboard that compare `vw_executive_kpis`, campaign ROAS, and platform ROAS against the printed PDF values.
