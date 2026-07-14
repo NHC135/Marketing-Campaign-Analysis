@@ -1,8 +1,8 @@
 # Postgres Medallion Warehouse — Social Campaign Analytics
 
-PostgreSQL implementation of the data behind `Market Campaign.pbix` / `Market Campaign.pdf`, following the medallion architecture (bronze → silver → gold) with a snowflake data model. Script layout and conventions mirror the CRM/ERP SQL warehouse project (init_database → per-layer DDL → `proc_load_*` stored procedures → gold views → per-layer quality checks), translated from MSSQL to PostgreSQL.
+PostgreSQL implementation of the data behind `Market Campaign.pbix` / `Market Campaign.pdf`, following the medallion architecture (bronze → silver → gold) with a snowflake data model. Script layout and conventions mirror the CRM/ERP SQL warehouse project (init_database → per-layer DDL → `proc_load_*` stored procedures → gold views → per-layer quality checks), PostgreSQL.
 
-Verified end-to-end on PostgreSQL 16: every quality check passes and the gold views reproduce the published Power BI dashboard PDF to the penny (revenue $6,702,764.38, blended ROAS 7.57x, CTR 1.83%, CPA $16.96, impressions 102.63M).
+Verified end-to-end on PostgreSQL: the gold views reproduce the published Power BI dashboard PDF (revenue $6,702,764.38, blended ROAS 7.57x, CTR 1.83%, CPA $16.96, impressions 102.63M).
 
 ## Files & run order
 
